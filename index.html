@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+    <title>CHAPTER 1 TO 67</title>
+</head>
+<body>
+    <!-- CHAPTER 43-48 -->
+
+    <!-- QUESTION 01 -->
+    <a href="#" onClick="alert('');">Click to show an alert box</a>
+    <!-- QUESTION 02-->
+   <br><br><br>
+    <div class="container">
+        <div class="row">
+            <h4>Mobile phone Lookup</h4>
+        </div>
+        <div class="row">
+        <div class="col-md-3"><img onclick="alert('Thanks for purchasing a phone from us.')" src="images/iphone.png" alt="Oppo A5 2020"  width="200px" height="150px"></div>
+        <div class="col-md-3"><img onclick="alert('Thanks for purchasing a phone from us.')" src="images/samsung.jpg" alt="" width="200px" height="150px"></div>
+        <div class="col-md-3"><img onclick="alert('Thanks for purchasing a phone from us.')" src="images/oppo.jpg" alt="" width="200px" height="150px"></div>
+        <div class="col-md-3"><img onclick="alert('Thanks for purchasing a phone from us.')" src="images/vivo.jpg" alt="" width="200px" height="150px"></div>
+    </div>
+    </div>
+<br><br>
+
+    <!-- QUESTION 03-->
+    <br><br> 
+ <table>
+    <tr>
+       <td><b>Index</b></td>
+       <td><b>Names</b></td>
+       <td> <b>Class</b> </td>
+       <td></td>
+    </tr>
+    <tr>
+     <td>0</td>
+     <td>Jhoe</td>
+     <td>10</td>
+     <td><input type="button" value="Delete" onclick="deleteRow()"></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Doe</td>
+        <td>9</td>
+        <td><input type="button" value="Delete" onclick="deleteRow()"></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Mark</td>
+        <td>10</td>
+        <td><input type="button" value="Delete" onclick="deleteRow()"></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>James</td>
+        <td>8</td>
+        <td><input type="button" value="Delete" onclick="deleteRow()"></td>
+    </tr>
+</table>
+<br>
+
+<!-- QUESTION # 04 -->
+<br><br>
+<div class="container">
+    <img id="image" onmouseover="newImage()" onmouseout="oldImage()"
+     src="images/9.jpg" width="500" alt="">
+     <br>
+</div>
+
+<!-- QUESTION # 05 -->
+<br><br>
+<form>
+    <input type="text" id="number" value="0"/>
+    <input type="button" onclick="incrementValue()" value="Increment Value" />
+    <input type="button" onclick="decrementValue()" value="decrement Value" />
+ </form>
+<hr>
+
+
+<!-- CHAPTER 49-52 -->
+
+
+<!-- QUESTION 01 -->
+  <form name="myform" style="border:1px solid #ccc">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+
+      <label for="email"><b>Email</b></label>
+      <input id="message" type="text" placeholder="Enter Email" name="email" required><br>
+      <label for="name"> <b>Name</b> </label>
+      <input type="text" placeholder="Enter Name" required name="Name" id="name"><br>
+      <label for="psw"><b>Password</b></label>
+      <input id="message" type="password" placeholder="Enter Password" name="psw" required><br>
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input id="message" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+     <br><br>
+      <div class="clearfix">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <input type="submit" onclick="showMessage(); return false"  value="submit"></input>
+      </div>
+    </div>
+  </form>
+  <div>
+  <h3>Form Data:</h3>
+  <p>  <span id="display_mail"></span> </p>
+  <p><span id="display_name"></span> </p>
+  </div>
+
+  <!-- QUESTION # 02 -->
+
+  <div class="container">
+    <h2>Mobile phone Details:</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="images/samsung-galaxy-a30.jpg" alt="Samsung A30">
+          <p>Samsung A30</p>
+        </div>
+        <div class="col-md-8" id="samsungdetails">
+          <ul>
+            <li> Released 2019, March</li>
+            <li>165g, 7.7mm thickness</li>
+            <a href="javascript:void(0);" onClick="seemore();"><em>Click for more.</em></a>
+          </ul>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="images/vivo v17.jpg" width="200" alt="Vivo V17">
+            <p>Vivo v17</p>
+          </div>
+          <div class="col-md-6" id="vivodetails">
+            <ul>
+              <li>Released 2019, December</li>
+              <li> Android 9.0, Funtouch 9.2</li>
+              <li>128GB/256GB storage</li>
+              <a href="javascript:void(0);" onClick="seemore();"><em>Click for more.</em></a>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+<!-- QUESTION 03 -->
+
+Index:<input type="number" name="index" id="indexx"><br><br>
+         Name:<input type="text" name="name" id="namee"><br><br>
+        class:<input type="text" name="class" id="classs"><br><br>
+        <button onclick="editRow();">Edit Row</button><br><br>        
+        <table id="table" border="1">           
+          <tr>
+            <td><b>Index</b></td>
+            <td><b>Names</b></td>
+            <td> <b>Class</b> </td>
+            <td></td>
+         </tr>
+         <tr>
+          <td>0</td>
+          <td>Jhoe</td>
+          <td>10</td>
+          <td><input type="button" value="Delete" onclick="deleteRow()"></td>
+          <td><input type="button" value="edit" onclick="editRow()"  id=""></td>
+         </tr>
+         <tr>
+             <td>1</td>
+             <td>Doe</td>
+             <td>9</td>
+             <td><input type="button" value="Delete" onclick="deleteRow()"></td>
+             <td><input type="button" value="edit" onclick="editRow()"  id=""></td>
+         </tr>
+         <tr>
+             <td>2</td>
+             <td>Mark</td>
+             <td>10</td>
+             <td><input type="button" value="Delete" onclick="deleteRow()"></td>
+             <td><input type="button" value="edit" onclick="editRow()"  id=""></td>
+         </tr>
+         <tr>
+             <td>3</td>
+             <td>James</td>
+             <td>8</td>
+             <td><input type="button" value="Delete" onclick="deleteRow()"></td>
+             <td><input type="button" value="edit" onclick="editRow()"  id=""></td>
+         </tr>
+        </table>
+<hr>
+
+<!-- CHAPTER 52-57 -->
+<hr>
+<!-- QUESTION 01 -->
+<img src="images/1.jpg" id="myImg" onclick="showImage(this)" data-toggle="modal" data-target="#myModal" alt="" width="180" height="180">
+<img src="images/2.jpg" id="myImg" onclick="showImage(this)" data-toggle="modal" data-target="#myModal" alt="" width="180" height="180">
+<img src="images/3.jpg" id="myImg" onclick="showImage(this)" data-toggle="modal" data-target="#myModal" alt="" width="180" height="180">
+<img src="images/4.png" id="myImg" onclick="showImage(this)" data-toggle="modal" data-target="#myModal" alt="" width="180" height="180">
+</div>
+<div class="container">
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+      <img  src="" class="bigImage" id="modalImage" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- QUESTION 02 -->
+
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+     Expedita quo animi exercitationem, laboriosam dicta dignissimos maxime accusantium quod culpa, 
+    a natus autem quae totam id error officia eligendi laudantium! Itaque?</p>
+
+<input type="button" value="+" onClick="zoomIn()"/>
+<input type="button" value="-" onClick="zoomOut()"/>
+<hr>
+
+<!-- CHAPTER 58-67 -->
+
+<div> <h1> DOM </h1> <div id="form-content" class="content"> <label for="first-name">First Name</label> <input type="text" id="first-name"/> <label for="last-name">Last Name</label> <input type="text" id="last-name"/> <label for="email">Email</label> <input type="text" id="email"/> </div><div id="main-content" class="content"> <p class="render"> First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="render"> Email : alexbank@example.com</p><p class="render"> Country : Pakistan </p><p class="render"> contact : +92 300 1234567</p></div></div>
+
+
+</body>
+<script src="app.js"></script>
+
+<script src="chapters/chap 01/app.js"></script>
+<script src="chapters/chap 02/app.js"></script>
+<script src="chapters/chap 03/app.js"></script>
+<script src="chapters/chap 04/app.js"></script>
+<script src="chapters/chap 05/app.js"></script>
+<script src="chapters/chap 6-9/app.js"></script>
+<script src="chapters/chap 9-10/app.js"></script>
+<script src="chapters/chap 12-13/app.js"></script>
+<script src="chapters/chap 13-15/app.js"></script>
+<script src="chapters/chap 17-20/app.js"></script>
+<script src="chapters/chap 21-25/app.js"></script>
+<script src="chapters/chap 26-30/app.js"></script>
+<script src="chapters/chap 31-34/app.js"></script>
+<script src="chapters/chap 35-38/app.js"></script>
+<script src="chapters/chap 38-42/app.js"></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</html>
